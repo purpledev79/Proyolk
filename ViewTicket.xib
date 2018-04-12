@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewTicket">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="440"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Ticket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP5-Re-DHF">
+                    <rect key="frame" x="15" y="24" width="280" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CnS-Nz-Op7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.031372549020000001" green="0.094117647060000004" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8je-r6-ec3">
+                    <rect key="frame" x="15" y="55" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="HHx-va-ZVf"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="SI6-7K-V99"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-GI-rze">
+                    <rect key="frame" x="15" y="97" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="gBU-4g-YHz"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="B2I-bc-kXL"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-tR-TfD">
+                    <rect key="frame" x="15" y="137" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ksW-Lx-Kb5"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="xac-pM-i5T"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="am3-ke-A4i">
+                    <rect key="frame" x="15" y="177" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="UQ3-CO-VYg"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="bQm-88-4na"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O7o-3s-8Ih">
+                    <rect key="frame" x="15" y="217" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="AM3-rd-TaM"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="xcV-L4-j0u"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-ko-3TE">
+                    <rect key="frame" x="15" y="396" width="280" height="31"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.0" green="0.070588235289999995" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OOU-Ah-tQP"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gw5-6J-Hxt">
+                    <rect key="frame" x="15" y="257" width="280" height="35"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="fte-xp-Urr"/>
+                    </constraints>
+                    <color key="textColor" red="0.7725490196" green="0.7725490196" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="gY0-WQ-pTW"/>
+                    </connections>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fdl-QX-0R5">
+                    <rect key="frame" x="15" y="300" width="280" height="75"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="vJI-G6-RaZ"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.83137254900000002" green="0.87450980389999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.83137254900000002" green="0.87450980389999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WP5-Re-DHF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0tP-JZ-oKD"/>
+                <constraint firstItem="Gw5-6J-Hxt" firstAttribute="width" secondItem="O7o-3s-8Ih" secondAttribute="width" id="4qU-cY-CGy"/>
+                <constraint firstItem="Fdl-QX-0R5" firstAttribute="leading" secondItem="3l2-ko-3TE" secondAttribute="leading" id="6dg-B9-igs"/>
+                <constraint firstItem="Fdl-QX-0R5" firstAttribute="trailing" secondItem="3l2-ko-3TE" secondAttribute="trailing" id="6uM-y7-mr7"/>
+                <constraint firstItem="am3-ke-A4i" firstAttribute="width" secondItem="mJK-tR-TfD" secondAttribute="width" id="BbF-k3-O7O"/>
+                <constraint firstItem="mJK-tR-TfD" firstAttribute="leading" secondItem="IZX-GI-rze" secondAttribute="leading" id="C0y-fD-cGY"/>
+                <constraint firstItem="IZX-GI-rze" firstAttribute="leading" secondItem="8je-r6-ec3" secondAttribute="leading" id="CeT-JO-Er8"/>
+                <constraint firstItem="am3-ke-A4i" firstAttribute="height" secondItem="mJK-tR-TfD" secondAttribute="height" id="GFK-oB-aWe"/>
+                <constraint firstItem="IZX-GI-rze" firstAttribute="trailing" secondItem="8je-r6-ec3" secondAttribute="trailing" id="J8W-hd-kgA"/>
+                <constraint firstItem="O7o-3s-8Ih" firstAttribute="height" secondItem="am3-ke-A4i" secondAttribute="height" id="Lbq-cM-EcQ"/>
+                <constraint firstItem="O7o-3s-8Ih" firstAttribute="leading" secondItem="am3-ke-A4i" secondAttribute="leading" id="ObK-rL-AvW"/>
+                <constraint firstItem="IZX-GI-rze" firstAttribute="top" secondItem="8je-r6-ec3" secondAttribute="bottom" constant="7" id="TeG-hN-yGp"/>
+                <constraint firstItem="mJK-tR-TfD" firstAttribute="top" secondItem="IZX-GI-rze" secondAttribute="bottom" constant="5" id="ToC-xZ-1Su"/>
+                <constraint firstItem="WP5-Re-DHF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="Wwj-AM-oeP"/>
+                <constraint firstItem="O7o-3s-8Ih" firstAttribute="top" secondItem="am3-ke-A4i" secondAttribute="bottom" constant="5" id="X0x-Ul-loz"/>
+                <constraint firstItem="am3-ke-A4i" firstAttribute="top" secondItem="mJK-tR-TfD" secondAttribute="bottom" constant="5" id="boX-bK-KC4"/>
+                <constraint firstItem="Gw5-6J-Hxt" firstAttribute="leading" secondItem="O7o-3s-8Ih" secondAttribute="leading" id="bpr-on-Dio"/>
+                <constraint firstItem="Gw5-6J-Hxt" firstAttribute="top" secondItem="O7o-3s-8Ih" secondAttribute="bottom" constant="5" id="cgc-Mr-mBu"/>
+                <constraint firstItem="mJK-tR-TfD" firstAttribute="height" secondItem="IZX-GI-rze" secondAttribute="height" id="dAE-le-zFm"/>
+                <constraint firstItem="Fdl-QX-0R5" firstAttribute="trailing" secondItem="Gw5-6J-Hxt" secondAttribute="trailing" id="gpY-CZ-CFe"/>
+                <constraint firstItem="am3-ke-A4i" firstAttribute="leading" secondItem="mJK-tR-TfD" secondAttribute="leading" id="jVH-wB-WHl"/>
+                <constraint firstItem="Gw5-6J-Hxt" firstAttribute="height" secondItem="O7o-3s-8Ih" secondAttribute="height" id="lgD-oI-Vms"/>
+                <constraint firstItem="8je-r6-ec3" firstAttribute="top" secondItem="WP5-Re-DHF" secondAttribute="bottom" constant="10" id="mD4-XV-3fQ"/>
+                <constraint firstItem="8je-r6-ec3" firstAttribute="leading" secondItem="WP5-Re-DHF" secondAttribute="leading" id="msB-7f-Eav"/>
+                <constraint firstItem="Fdl-QX-0R5" firstAttribute="leading" secondItem="Gw5-6J-Hxt" secondAttribute="leading" id="na5-C9-f0t"/>
+                <constraint firstAttribute="trailing" secondItem="WP5-Re-DHF" secondAttribute="trailing" constant="16" id="qZi-17-QeE"/>
+                <constraint firstItem="3l2-ko-3TE" firstAttribute="top" secondItem="Fdl-QX-0R5" secondAttribute="bottom" constant="21" id="rZO-cn-WCB"/>
+                <constraint firstItem="8je-r6-ec3" firstAttribute="width" secondItem="WP5-Re-DHF" secondAttribute="width" id="rwc-x0-pVB"/>
+                <constraint firstItem="Fdl-QX-0R5" firstAttribute="top" secondItem="Gw5-6J-Hxt" secondAttribute="bottom" constant="8" symbolic="YES" id="sMX-t9-SCK"/>
+                <constraint firstItem="O7o-3s-8Ih" firstAttribute="width" secondItem="am3-ke-A4i" secondAttribute="width" id="uoS-gA-MsA"/>
+                <constraint firstItem="mJK-tR-TfD" firstAttribute="width" secondItem="IZX-GI-rze" secondAttribute="width" id="zpy-5o-dbN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="txtAttachment" destination="Gw5-6J-Hxt" id="M6o-jK-XKp"/>
+                <outlet property="txtCreated" destination="am3-ke-A4i" id="vuc-H8-BNE"/>
+                <outlet property="txtDescription" destination="Fdl-QX-0R5" id="ZgR-1k-NbZ"/>
+                <outlet property="txtPriority" destination="mJK-tR-TfD" id="mou-V1-WJa"/>
+                <outlet property="txtStatus" destination="IZX-GI-rze" id="4WS-JV-CLC"/>
+                <outlet property="txtTitle" destination="8je-r6-ec3" id="8eH-sr-9Gf"/>
+                <outlet property="txtlastActon" destination="O7o-3s-8Ih" id="ro8-98-31f"/>
+            </connections>
+            <point key="canvasLocation" x="329.5" y="58"/>
+        </view>
+    </objects>
+</document>

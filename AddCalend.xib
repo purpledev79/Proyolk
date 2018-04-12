@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddCalend">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRd-x0-3Et">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMz-MB-yg7">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a New Calender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox5-YR-wp6">
+                                    <rect key="frame" x="10" y="10" width="300" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="5Qb-oC-cHX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.031372549020000001" green="0.094117647060000004" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CD-2x-JIr">
+                                    <rect key="frame" x="10" y="48" width="300" height="35"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="7T2-Oi-oXh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="k4d-LB-9lb"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1DH-ZW-4de">
+                                    <rect key="frame" x="10" y="93" width="300" height="35"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="3Lf-a5-EKm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="Pab-35-ghG"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rti-RP-wyq">
+                                    <rect key="frame" x="10" y="136" width="300" height="35"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="aNR-B5-ilr"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="7bZ-eM-s2F"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select TImezone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-p3-Tv7">
+                                    <rect key="frame" x="10" y="181" width="300" height="35"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="sXD-kI-Ue4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="az7-AU-qVN"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obd-8l-aXW">
+                                    <rect key="frame" x="10" y="226" width="300" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-pI-Fu9">
+                                            <rect key="frame" x="212.5" y="0.0" width="87.5" height="33"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Network" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnSharedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yKG-dX-XKb"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shared" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-Kr-vqn">
+                                            <rect key="frame" x="5" y="0.0" width="100" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="Tek-TJ-808"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                            <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CE-cg-CcS">
+                                            <rect key="frame" x="125" y="0.0" width="87.5" height="33"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Cabinet" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnSharedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tKM-Jb-tbw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uCd-pI-Fu9" secondAttribute="bottom" constant="2" id="26p-py-fgO"/>
+                                        <constraint firstItem="YXi-Kr-vqn" firstAttribute="top" secondItem="obd-8l-aXW" secondAttribute="top" id="7ML-RD-Faz"/>
+                                        <constraint firstAttribute="trailing" secondItem="uCd-pI-Fu9" secondAttribute="trailing" id="8o4-32-91k"/>
+                                        <constraint firstItem="uCd-pI-Fu9" firstAttribute="top" secondItem="obd-8l-aXW" secondAttribute="top" id="Ewn-wN-sgj"/>
+                                        <constraint firstItem="5CE-cg-CcS" firstAttribute="top" secondItem="uCd-pI-Fu9" secondAttribute="top" id="IOe-AP-l4A"/>
+                                        <constraint firstItem="YXi-Kr-vqn" firstAttribute="leading" secondItem="obd-8l-aXW" secondAttribute="leading" constant="5" id="QNk-LN-ulT"/>
+                                        <constraint firstItem="5CE-cg-CcS" firstAttribute="height" secondItem="uCd-pI-Fu9" secondAttribute="height" id="T5K-am-TZB"/>
+                                        <constraint firstAttribute="height" constant="35" id="Urf-0N-cOO"/>
+                                        <constraint firstItem="uCd-pI-Fu9" firstAttribute="leading" secondItem="5CE-cg-CcS" secondAttribute="trailing" id="Zue-tx-emc"/>
+                                        <constraint firstItem="5CE-cg-CcS" firstAttribute="leading" secondItem="YXi-Kr-vqn" secondAttribute="trailing" constant="20" id="egH-y0-qCQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="YXi-Kr-vqn" secondAttribute="bottom" id="nfz-gc-rTu"/>
+                                        <constraint firstItem="5CE-cg-CcS" firstAttribute="width" secondItem="uCd-pI-Fu9" secondAttribute="width" id="ocT-YU-rG0"/>
+                                    </constraints>
+                                </view>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qr7-c0-6iC">
+                                    <rect key="frame" x="10" y="271" width="300" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obu-I9-7PL">
+                                            <rect key="frame" x="221.5" y="0.0" width="78.5" height="31"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Private" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnVisibilityAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lc3-WR-AYI"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qv-Gx-Nuo">
+                                            <rect key="frame" x="143.5" y="0.0" width="78" height="31"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Public" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnVisibilityAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ciF-ro-Crh"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrm-MM-ubj">
+                                            <rect key="frame" x="65" y="0.0" width="78.5" height="31"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Friend" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnVisibilityAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1IA-mT-LWp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0X-wm-y85">
+                                            <rect key="frame" x="5" y="39" width="131" height="20"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Cabinat Members" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnVisibilityAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="r6Y-2A-jMn"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-CS-2ft">
+                                            <rect key="frame" x="161" y="39" width="134" height="20"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Network Members" image="radiounselect.png">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <state key="selected" image="radioselect.png"/>
+                                            <connections>
+                                                <action selector="btnVisibilityAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zu3-Ut-uIT"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visibility" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfM-zs-a9O">
+                                            <rect key="frame" x="5" y="8" width="50" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="g1Z-Pi-uG3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                            <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="0dc-CS-2ft" secondAttribute="trailing" constant="5" id="0k1-CZ-LlF"/>
+                                        <constraint firstItem="1qv-Gx-Nuo" firstAttribute="centerY" secondItem="wrm-MM-ubj" secondAttribute="centerY" id="1BJ-ny-4qj"/>
+                                        <constraint firstItem="obu-I9-7PL" firstAttribute="leading" secondItem="1qv-Gx-Nuo" secondAttribute="trailing" id="Cxz-bf-jZQ"/>
+                                        <constraint firstItem="wrm-MM-ubj" firstAttribute="centerY" secondItem="KfM-zs-a9O" secondAttribute="centerY" id="INl-vd-F6h"/>
+                                        <constraint firstItem="0dc-CS-2ft" firstAttribute="top" secondItem="1qv-Gx-Nuo" secondAttribute="bottom" constant="8" id="JnG-mP-t21"/>
+                                        <constraint firstItem="1qv-Gx-Nuo" firstAttribute="leading" secondItem="wrm-MM-ubj" secondAttribute="trailing" id="LGA-0F-IuF"/>
+                                        <constraint firstItem="0dc-CS-2ft" firstAttribute="centerY" secondItem="a0X-wm-y85" secondAttribute="centerY" id="LWf-Ob-FRS"/>
+                                        <constraint firstItem="obu-I9-7PL" firstAttribute="top" secondItem="qr7-c0-6iC" secondAttribute="top" id="VfA-Aq-Pm7"/>
+                                        <constraint firstItem="1qv-Gx-Nuo" firstAttribute="top" secondItem="obu-I9-7PL" secondAttribute="top" id="aTs-3I-VEL"/>
+                                        <constraint firstAttribute="trailing" secondItem="obu-I9-7PL" secondAttribute="trailing" id="aYN-QK-dOV"/>
+                                        <constraint firstItem="0dc-CS-2ft" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a0X-wm-y85" secondAttribute="trailing" constant="5" id="d4L-ex-ZNt"/>
+                                        <constraint firstItem="obu-I9-7PL" firstAttribute="centerY" secondItem="1qv-Gx-Nuo" secondAttribute="centerY" id="gX3-T6-JwF"/>
+                                        <constraint firstItem="wrm-MM-ubj" firstAttribute="width" secondItem="1qv-Gx-Nuo" secondAttribute="width" id="hh9-yQ-Sp1"/>
+                                        <constraint firstItem="wrm-MM-ubj" firstAttribute="top" secondItem="1qv-Gx-Nuo" secondAttribute="top" id="lyM-oW-8co"/>
+                                        <constraint firstItem="KfM-zs-a9O" firstAttribute="top" secondItem="qr7-c0-6iC" secondAttribute="top" constant="8" id="mbS-6Y-kdw"/>
+                                        <constraint firstItem="a0X-wm-y85" firstAttribute="top" secondItem="wrm-MM-ubj" secondAttribute="bottom" constant="8" id="pDx-gR-LXd"/>
+                                        <constraint firstItem="wrm-MM-ubj" firstAttribute="leading" secondItem="KfM-zs-a9O" secondAttribute="trailing" constant="10" id="r3p-7P-WWF"/>
+                                        <constraint firstItem="1qv-Gx-Nuo" firstAttribute="width" secondItem="obu-I9-7PL" secondAttribute="width" id="ttx-ri-sMO"/>
+                                        <constraint firstItem="KfM-zs-a9O" firstAttribute="leading" secondItem="qr7-c0-6iC" secondAttribute="leading" constant="5" id="vA1-ix-flw"/>
+                                        <constraint firstItem="a0X-wm-y85" firstAttribute="leading" secondItem="qr7-c0-6iC" secondAttribute="leading" constant="5" id="w27-HI-bNC"/>
+                                        <constraint firstAttribute="height" constant="35" id="yIq-tR-CYf"/>
+                                    </constraints>
+                                </view>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-RF-pIK">
+                                    <rect key="frame" x="10" y="321" width="300" height="120"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="yiX-uB-zAm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="0.74901960779999999" green="0.74901960779999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="eBH-0I-xuu"/>
+                                    </connections>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hel-Ni-Ek0">
+                                    <rect key="frame" x="165" y="451" width="145" height="40"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.0" green="0.070588235289999995" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnCancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="nBD-Hb-OhW"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-p7-YXh">
+                                    <rect key="frame" x="10" y="451" width="145" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="cUW-p2-CGh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                    <state key="normal" title="Send">
+                                        <color key="titleColor" red="0.0" green="0.070588235289999995" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSendAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QqB-xZ-5mu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.83137254900000002" green="0.87450980389999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="hel-Ni-Ek0" firstAttribute="top" secondItem="RCr-p7-YXh" secondAttribute="top" id="2u4-5x-boD"/>
+                                <constraint firstItem="rti-RP-wyq" firstAttribute="width" secondItem="1DH-ZW-4de" secondAttribute="width" id="3oc-SS-tBl"/>
+                                <constraint firstItem="hel-Ni-Ek0" firstAttribute="height" secondItem="RCr-p7-YXh" secondAttribute="height" id="4gc-hb-bwD"/>
+                                <constraint firstItem="0CD-2x-JIr" firstAttribute="width" secondItem="ox5-YR-wp6" secondAttribute="width" id="4oz-GL-u0X"/>
+                                <constraint firstItem="OkG-p3-Tv7" firstAttribute="top" secondItem="rti-RP-wyq" secondAttribute="bottom" constant="10" id="6iJ-DL-cIM"/>
+                                <constraint firstItem="f3C-RF-pIK" firstAttribute="leading" secondItem="qr7-c0-6iC" secondAttribute="leading" id="7XG-PF-X3f"/>
+                                <constraint firstItem="obd-8l-aXW" firstAttribute="leading" secondItem="OkG-p3-Tv7" secondAttribute="leading" id="7lN-OY-BQ4"/>
+                                <constraint firstItem="RCr-p7-YXh" firstAttribute="leading" secondItem="f3C-RF-pIK" secondAttribute="leading" id="826-Yn-Iqh"/>
+                                <constraint firstItem="rti-RP-wyq" firstAttribute="height" secondItem="1DH-ZW-4de" secondAttribute="height" id="8fC-5f-xBn"/>
+                                <constraint firstItem="1DH-ZW-4de" firstAttribute="width" secondItem="0CD-2x-JIr" secondAttribute="width" id="DqC-Um-mex"/>
+                                <constraint firstItem="0CD-2x-JIr" firstAttribute="leading" secondItem="ox5-YR-wp6" secondAttribute="leading" id="FBb-ar-7lB"/>
+                                <constraint firstItem="OkG-p3-Tv7" firstAttribute="leading" secondItem="rti-RP-wyq" secondAttribute="leading" id="FWg-Mg-spM"/>
+                                <constraint firstItem="rti-RP-wyq" firstAttribute="leading" secondItem="1DH-ZW-4de" secondAttribute="leading" id="GY0-es-3Vt"/>
+                                <constraint firstItem="1DH-ZW-4de" firstAttribute="top" secondItem="0CD-2x-JIr" secondAttribute="bottom" constant="10" id="Gqu-fF-tC3"/>
+                                <constraint firstItem="hel-Ni-Ek0" firstAttribute="trailing" secondItem="f3C-RF-pIK" secondAttribute="trailing" id="ICB-Pi-xke"/>
+                                <constraint firstItem="OkG-p3-Tv7" firstAttribute="height" secondItem="rti-RP-wyq" secondAttribute="height" id="JYb-39-YQu"/>
+                                <constraint firstAttribute="trailing" secondItem="ox5-YR-wp6" secondAttribute="trailing" constant="10" id="MyW-8t-aN9"/>
+                                <constraint firstItem="qr7-c0-6iC" firstAttribute="top" secondItem="obd-8l-aXW" secondAttribute="bottom" constant="10" id="N2L-kQ-m9S"/>
+                                <constraint firstItem="obd-8l-aXW" firstAttribute="height" secondItem="OkG-p3-Tv7" secondAttribute="height" id="PWF-pf-rr8"/>
+                                <constraint firstItem="f3C-RF-pIK" firstAttribute="top" secondItem="qr7-c0-6iC" secondAttribute="bottom" constant="15" id="RHM-mi-z8E"/>
+                                <constraint firstItem="obd-8l-aXW" firstAttribute="width" secondItem="OkG-p3-Tv7" secondAttribute="width" id="TBC-KC-hW8"/>
+                                <constraint firstItem="qr7-c0-6iC" firstAttribute="leading" secondItem="obd-8l-aXW" secondAttribute="leading" id="UPF-nr-UOl"/>
+                                <constraint firstItem="ox5-YR-wp6" firstAttribute="leading" secondItem="xMz-MB-yg7" secondAttribute="leading" constant="10" id="Ue0-88-DUF"/>
+                                <constraint firstItem="hel-Ni-Ek0" firstAttribute="width" secondItem="RCr-p7-YXh" secondAttribute="width" id="V7p-q8-YXP"/>
+                                <constraint firstItem="rti-RP-wyq" firstAttribute="top" secondItem="1DH-ZW-4de" secondAttribute="bottom" constant="8" id="Y1z-Jt-szs"/>
+                                <constraint firstItem="RCr-p7-YXh" firstAttribute="top" secondItem="f3C-RF-pIK" secondAttribute="bottom" constant="10" id="Z7v-sE-25p"/>
+                                <constraint firstItem="1DH-ZW-4de" firstAttribute="leading" secondItem="0CD-2x-JIr" secondAttribute="leading" id="aRe-xc-Ftg"/>
+                                <constraint firstItem="OkG-p3-Tv7" firstAttribute="width" secondItem="rti-RP-wyq" secondAttribute="width" id="esf-hh-bAt"/>
+                                <constraint firstItem="0CD-2x-JIr" firstAttribute="top" secondItem="ox5-YR-wp6" secondAttribute="bottom" constant="17" id="fUY-6t-GXq"/>
+                                <constraint firstItem="f3C-RF-pIK" firstAttribute="width" secondItem="qr7-c0-6iC" secondAttribute="width" id="mt9-kl-h4K"/>
+                                <constraint firstItem="qr7-c0-6iC" firstAttribute="width" secondItem="obd-8l-aXW" secondAttribute="width" id="rkd-Uf-LkU"/>
+                                <constraint firstItem="ox5-YR-wp6" firstAttribute="top" secondItem="xMz-MB-yg7" secondAttribute="top" constant="10" id="ufO-mj-Nzi"/>
+                                <constraint firstItem="hel-Ni-Ek0" firstAttribute="leading" secondItem="RCr-p7-YXh" secondAttribute="trailing" constant="10" id="v4H-dD-OVc"/>
+                                <constraint firstAttribute="height" constant="500" id="v64-83-orz"/>
+                                <constraint firstItem="obd-8l-aXW" firstAttribute="top" secondItem="OkG-p3-Tv7" secondAttribute="bottom" constant="10" id="yVQ-VY-FY0"/>
+                                <constraint firstItem="1DH-ZW-4de" firstAttribute="height" secondItem="0CD-2x-JIr" secondAttribute="height" id="zCb-fe-ErO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xMz-MB-yg7" firstAttribute="top" secondItem="sRd-x0-3Et" secondAttribute="top" id="2FZ-vu-kSg"/>
+                        <constraint firstAttribute="bottom" secondItem="xMz-MB-yg7" secondAttribute="bottom" id="7jO-1T-AQc"/>
+                        <constraint firstItem="xMz-MB-yg7" firstAttribute="centerX" secondItem="sRd-x0-3Et" secondAttribute="centerX" id="OUK-dp-S6V"/>
+                        <constraint firstItem="xMz-MB-yg7" firstAttribute="leading" secondItem="sRd-x0-3Et" secondAttribute="leading" id="ldd-Nm-eTT"/>
+                        <constraint firstAttribute="trailing" secondItem="xMz-MB-yg7" secondAttribute="trailing" id="omZ-vL-h70"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.83137254900000002" green="0.87450980389999999" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sRd-x0-3Et" secondAttribute="trailing" id="3qr-Fu-Ju5"/>
+                <constraint firstItem="sRd-x0-3Et" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9aX-eU-F94"/>
+                <constraint firstItem="sRd-x0-3Et" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CJS-Ao-NJC"/>
+                <constraint firstAttribute="bottom" secondItem="sRd-x0-3Et" secondAttribute="bottom" id="mKx-uR-0ux"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCabinateMembersVisibility" destination="a0X-wm-y85" id="9vh-1l-cgg"/>
+                <outlet property="btnCabinet" destination="5CE-cg-CcS" id="FvT-mS-TLK"/>
+                <outlet property="btnFrined" destination="wrm-MM-ubj" id="xZT-uB-8ER"/>
+                <outlet property="btnNetwork" destination="uCd-pI-Fu9" id="euV-xO-jiS"/>
+                <outlet property="btnNetworkMembersVisibility" destination="0dc-CS-2ft" id="q9G-SJ-kZU"/>
+                <outlet property="btnPrivate" destination="obu-I9-7PL" id="onz-sW-3U3"/>
+                <outlet property="btnPublic" destination="1qv-Gx-Nuo" id="FjC-g0-5ma"/>
+                <outlet property="heightVisibility" destination="yIq-tR-CYf" id="tgB-UE-lFZ"/>
+                <outlet property="txtCalenderName" destination="0CD-2x-JIr" id="7qq-Dh-lHj"/>
+                <outlet property="txtDescription" destination="f3C-RF-pIK" id="cZr-Np-Ciq"/>
+                <outlet property="txtLocation" destination="1DH-ZW-4de" id="dIm-rE-BQH"/>
+                <outlet property="txtSelectCountry" destination="rti-RP-wyq" id="qXh-Ab-mfJ"/>
+                <outlet property="txtTimeZone" destination="OkG-p3-Tv7" id="vmK-B8-8PY"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="136"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="radioselect.png" width="20" height="20"/>
+        <image name="radiounselect.png" width="20" height="20"/>
+    </resources>
+</document>

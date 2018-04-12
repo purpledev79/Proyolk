@@ -1,0 +1,121 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AKVideoImageView (1.0.0)
+  - AppRTC (1.0.2):
+    - libjingle_peerconnection
+    - SocketRocket
+  - BSKeyboardControls (2.2)
+  - FirebaseAnalytics (3.5.1):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.4.4):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.8)
+  - FSCalendar (2.6.0)
+  - Google/Core (3.0.3):
+    - FirebaseAnalytics (~> 3.2)
+  - Google/SignIn (3.0.3):
+    - Google/Core
+    - GoogleSignIn (~> 4.0)
+  - GoogleAppUtilities (1.1.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSignIn (4.0.1):
+    - GoogleAppUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/DebugUtils (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
+  - GoogleToolboxForMac/Defines (2.1.0)
+  - GoogleToolboxForMac/NSData+zlib (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.0):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.0)
+    - GoogleToolboxForMac/Defines (= 2.1.0)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
+  - GTMOAuth2 (1.1.4):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.7):
+    - GTMSessionFetcher/Full (= 1.1.7)
+  - GTMSessionFetcher/Core (1.1.7)
+  - GTMSessionFetcher/Full (1.1.7):
+    - GTMSessionFetcher/Core (= 1.1.7)
+  - HMSegmentedControl (1.5.3)
+  - libjingle_peerconnection (11177.2.0)
+  - MDMCoreData (1.5.1):
+    - MDMCoreData/MDMCoreDataCore (= 1.5.1)
+    - MDMCoreData/MDMFetchedResultsCollectionDataSource (= 1.5.1)
+    - MDMCoreData/MDMFetchedResultsTableDataSource (= 1.5.1)
+    - MDMCoreData/MDMPersistenceController (= 1.5.1)
+    - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (= 1.5.1)
+  - MDMCoreData/MDMCoreDataCore (1.5.1)
+  - MDMCoreData/MDMFetchedResultsCollectionDataSource (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/MDMFetchedResultsTableDataSource (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/MDMPersistenceController (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/NSManagedObject+MDMCoreDataAdditions (1.5.1):
+    - MDMCoreData/MDMCoreDataCore
+  - Sheriff (0.3.2)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AKVideoImageView (~> 1.0)
+  - AppRTC
+  - BSKeyboardControls
+  - FSCalendar
+  - Google/SignIn
+  - HMSegmentedControl
+  - MDMCoreData
+  - Sheriff
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AKVideoImageView: 2fae617396de84f47925e8c7182230ecf9031154
+  AppRTC: 29a5418955fee7fba3df36a0c37285cd835272ad
+  BSKeyboardControls: b701935e789961102e3f20063bba7185800a2d3f
+  FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
+  FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  FSCalendar: c00fa5f4c3ec343ee6f7b804ae19322e9898bb84
+  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
+  GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleSignIn: a8694c0a8e6d1b0ec77c58014de5bfd4ba2fa766
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
+  GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
+  MDMCoreData: 28b334173177effeb1dd135da677062096e3cb68
+  Sheriff: d3d03fe6d35aa781e3f42d48f3fb53ed7d04958d
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 75c111e5e6bbbb15400908153d442bf08e06e097
+
+COCOAPODS: 1.2.0

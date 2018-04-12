@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomingCallAlert">
+            <connections>
+                <outlet property="callerImageView" destination="fHz-bc-qks" id="Qhb-Zn-92h"/>
+                <outlet property="callerNameLbl" destination="pYl-ZP-2QV" id="XFM-bH-OVC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qot-vo-WnN">
+                    <rect key="frame" x="21" y="92" width="332" height="484"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calling.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDc-1j-mTM">
+                            <rect key="frame" x="135.5" y="40" width="62" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.16822832822799683" green="0.33400729298591614" blue="0.74695104360580444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fHz-bc-qks">
+                            <rect key="frame" x="106.5" y="108" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="ctj-Lm-8Aa"/>
+                                <constraint firstAttribute="width" constant="120" id="oDF-5N-7Eg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="60"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someone Calling..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYl-ZP-2QV">
+                            <rect key="frame" x="98.5" y="268" width="136" height="19"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3O-ng-lmg">
+                            <rect key="frame" x="25" y="411" width="125.5" height="44"/>
+                            <color key="backgroundColor" red="0.19862307608127594" green="0.56418240070343018" blue="0.093257375061511993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Tst-tv-rMG"/>
+                            </constraints>
+                            <state key="normal" title="Accept">
+                                <color key="titleColor" red="0.98431372549999996" green="0.98823529409999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acceptCallAction:" destination="-1" eventType="touchUpInside" id="Dqm-XH-dNA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S37-aF-E5s">
+                            <rect key="frame" x="181.5" y="411" width="125.5" height="44"/>
+                            <color key="backgroundColor" red="0.83066558837890625" green="0.2837052047252655" blue="0.19899298250675201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="on1-s7-lqd"/>
+                            </constraints>
+                            <state key="normal" title="Reject">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="rejectCallAction:" destination="-1" eventType="touchUpInside" id="JCy-RH-rV3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="S37-aF-E5s" firstAttribute="width" secondItem="Z3O-ng-lmg" secondAttribute="width" id="5hL-r7-nqA"/>
+                        <constraint firstItem="fHz-bc-qks" firstAttribute="top" secondItem="pDc-1j-mTM" secondAttribute="bottom" constant="48" id="7u6-g5-FHv"/>
+                        <constraint firstItem="pDc-1j-mTM" firstAttribute="top" secondItem="Qot-vo-WnN" secondAttribute="top" constant="40" id="AAh-hJ-07k"/>
+                        <constraint firstAttribute="bottom" secondItem="S37-aF-E5s" secondAttribute="bottom" constant="29" id="J5n-ga-dOQ"/>
+                        <constraint firstItem="Z3O-ng-lmg" firstAttribute="leading" secondItem="Qot-vo-WnN" secondAttribute="leading" constant="25" id="SFc-gx-med"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pYl-ZP-2QV" secondAttribute="trailing" constant="30" id="ZZp-sS-85V"/>
+                        <constraint firstItem="pDc-1j-mTM" firstAttribute="centerX" secondItem="Qot-vo-WnN" secondAttribute="centerX" id="Zy1-CM-goY"/>
+                        <constraint firstItem="pYl-ZP-2QV" firstAttribute="centerX" secondItem="fHz-bc-qks" secondAttribute="centerX" id="aXp-c6-wRQ"/>
+                        <constraint firstItem="fHz-bc-qks" firstAttribute="centerX" secondItem="pDc-1j-mTM" secondAttribute="centerX" id="dCk-WD-ZFz"/>
+                        <constraint firstItem="pYl-ZP-2QV" firstAttribute="top" secondItem="fHz-bc-qks" secondAttribute="bottom" constant="40" id="dxf-Qz-qTE"/>
+                        <constraint firstItem="S37-aF-E5s" firstAttribute="leading" secondItem="Z3O-ng-lmg" secondAttribute="trailing" constant="31" id="oZF-xH-0Sz"/>
+                        <constraint firstAttribute="trailing" secondItem="S37-aF-E5s" secondAttribute="trailing" constant="25" id="rQi-gg-lPm"/>
+                        <constraint firstItem="pYl-ZP-2QV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qot-vo-WnN" secondAttribute="leading" constant="30" id="uri-QX-IEr"/>
+                        <constraint firstAttribute="bottom" secondItem="Z3O-ng-lmg" secondAttribute="bottom" constant="29" id="zTx-cY-5uu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.069125667214393616" green="0.069123595952987671" blue="0.069124780595302582" alpha="0.41555683724832215" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qot-vo-WnN" secondAttribute="bottom" constant="91" id="ZOT-Lu-dYo"/>
+                <constraint firstAttribute="trailing" secondItem="Qot-vo-WnN" secondAttribute="trailing" constant="22" id="gpD-9t-pOx"/>
+                <constraint firstItem="Qot-vo-WnN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="m27-y1-sBi"/>
+                <constraint firstItem="Qot-vo-WnN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="nmy-SG-lq3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.jpg" width="990" height="1260"/>
+    </resources>
+</document>
